@@ -1,0 +1,69 @@
+[role="xpack"]
+[[automating-report-generation]]
+== Automating report generation
+Automatically generate PDF and CSV reports by submitting HTTP `POST` requests using {watcher} or a script.
+
+include::report-intervals.asciidoc[]
+
+[float]
+=== Create a POST URL
+
+Create the POST URL that triggers a report to generate PDF and CSV reports.
+
+To create the POST URL for PDF reports:
+
+. Open the  dashboard, visualization, or **Canvas** workpad.
+
+. From the {kib} toolbar, click *Share*, then select *PDF Reports*.
+
+. If you are using **Canvas**,  click *Advanced options*.
+
+. Click *Copy POST URL*.
++
+[role="screenshot"]
+image::images/report-automate-pdf.png[Automatically generate *Dashboard* and *Visualize Library* reports]
+
+
+To create the POST URL for CSV reports:
+
+. In *Discover*, open the saved search.
+
+. From the {kib} toolbar, click *Share*, then select *CSV Reports*.
+
+. Click *Copy POST URL*.
++
+[role="screenshot"]
+image::images/report-automate-csv.png[Generate Discover reports]
+
+[float]
+=== Use Watcher
+
+include::watch-example.asciidoc[]
+
+[float]
+=== Use a script
+
+include::script-example.asciidoc[]
+
+[float]
+=== HTTP response codes
+
+include::response-codes.asciidoc[]
+
+[float]
+=== Deprecated report URLs
+
+The following POST URL paths are deprecated. If there are
+any problems with using these paths after you upgrade {kib}, use
+{kib} to regenerate the POST URL for a particular report.
+
+* Dashboard reports:  `/api/reporting/generate/dashboard/<dashboard-id>`
+* Visualize reports:  `/api/reporting/generate/visualization/<visualization-id>`
+* Saved Search reports: `/api/reporting/generate/search/<saved-search-id>`
+
+[IMPORTANT]
+===================
+Previously there was a `&sync` parameter appended to generation URLs which would hold
+the request open until the document was fully generated. This feature has been removed.
+Existing use of the `&sync` parameter, in Watcher for example, will need to be updated.
+===================
