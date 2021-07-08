@@ -8,8 +8,8 @@
 
 import { monaco } from '@kbn/monaco';
 
-import darkTheme from '@elastic/eui/dist/eui_theme_dark.json';
-import lightTheme from '@elastic/eui/dist/eui_theme_light.json';
+import darkTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import lightTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 // NOTE: For talk around where this theme information will ultimately live,
 // please see this discuss issue: https://github.com/elastic/kibana/issues/43814

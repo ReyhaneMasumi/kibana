@@ -8,8 +8,8 @@
 import { i18n } from '@kbn/i18n';
 
 import { ButtonColor } from '@elastic/eui';
-import euiThemeAmsterdamDark from '@elastic/eui/dist/eui_theme_amsterdam_dark.json';
-import euiThemeAmsterdamLight from '@elastic/eui/dist/eui_theme_amsterdam_light.json';
+import euiThemeAmsterdamDark from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import euiThemeAmsterdamLight from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { useMemo } from 'react';
 import { ResolverProcessType, NodeDataStatus } from '../types';
 import { useUiSetting } from '../../../../../../src/plugins/kibana_react/public';

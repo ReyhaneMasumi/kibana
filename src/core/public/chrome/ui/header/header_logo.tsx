@@ -100,7 +100,8 @@ export function HeaderLogo({ href, navigateToApp, loadingCount$, ...observables 
       })}
     >
       <LoadingIndicator loadingCount$={loadingCount$!} />
-      <ElasticMark className="chrHeaderLogo__mark" aria-hidden={true} />
+      {/* <ElasticMark className="chrHeaderLogo__mark" aria-hidden={true} /> */}
+      FanAva
     </a>
   );
 }

@@ -7,7 +7,7 @@
  */
 
 // @ts-ignore
-import { euiColorAccent } from '@elastic/eui/dist/eui_theme_light.json';
+import { euiColorAccent } from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import React, { Component, Fragment } from 'react';
 
 import {

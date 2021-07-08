@@ -6,7 +6,7 @@
  */
 
 import { sum, round } from 'lodash';
-import theme from '@elastic/eui/dist/eui_theme_light.json';
+import theme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { isFiniteNumber } from '../../../../../../common/utils/is_finite_number';
 import { Setup, SetupTimeRange } from '../../../../helpers/setup_request';
 import { getMetricsDateHistogramParams } from '../../../../helpers/metrics';

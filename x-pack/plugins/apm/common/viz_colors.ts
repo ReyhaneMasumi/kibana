@@ -5,7 +5,7 @@
  * 2.0.
  */
 
-import lightTheme from '@elastic/eui/dist/eui_theme_light.json';
+import lightTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 function getVizColorsForTheme(theme = lightTheme) {
   return [

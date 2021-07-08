@@ -6,7 +6,8 @@
  * Side Public License, v 1.
  */
 
-import LightTheme from '@elastic/eui/dist/eui_theme_light.json';
+// import LightTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import LightTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 const globals: any = typeof window === 'undefined' ? {} : window;
 
@@ -21,11 +22,12 @@ export const darkMode = tag.endsWith('dark');
 export let euiLightVars: Theme;
 export let euiDarkVars: Theme;
 if (version === 7) {
-  euiLightVars = require('@elastic/eui/dist/eui_theme_light.json');
-  euiDarkVars = require('@elastic/eui/dist/eui_theme_dark.json');
+  // euiLightVars = require('@elastic/eui/dist/eui_theme_fanava_light.json');
+  euiLightVars = require('@elastic/eui/dist/eui_theme_fanava_light.json');
+  euiDarkVars = require('@elastic/eui/dist/eui_theme_fanava_light.json');
 } else {
-  euiLightVars = require('@elastic/eui/dist/eui_theme_amsterdam_light.json');
-  euiDarkVars = require('@elastic/eui/dist/eui_theme_amsterdam_dark.json');
+  euiLightVars = require('@elastic/eui/dist/eui_theme_fanava_light.json');
+  euiDarkVars = require('@elastic/eui/dist/eui_theme_fanava_light.json');
 }
 
 /**

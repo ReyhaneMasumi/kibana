@@ -5,7 +5,7 @@
  * 2.0.
  */
 
-import euiDarkVars from '@elastic/eui/dist/eui_theme_dark.json';
+import euiDarkVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { mount, shallow } from 'enzyme';
 import React from 'react';
 

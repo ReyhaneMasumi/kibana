@@ -8,7 +8,7 @@
 import { upperFirst } from 'lodash/fp';
 import React from 'react';
 import { EuiHealth } from '@elastic/eui';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 interface Props {
   value: string;

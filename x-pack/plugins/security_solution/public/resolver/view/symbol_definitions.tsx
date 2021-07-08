@@ -90,7 +90,7 @@ const PaintServers = memo(({ isDarkMode }: { isDarkMode: boolean }) => {
         gradientTransform="matrix(70.05179, 0, 0, -79.94774, 26724.01618, 21181.09848)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.00087" stopColor="#006bb4" />
+        <stop offset="0.00087" stopColor="#4d8c5e" />
         <stop offset="1" stopColor="#54b399" />
       </linearGradient>
       <linearGradient

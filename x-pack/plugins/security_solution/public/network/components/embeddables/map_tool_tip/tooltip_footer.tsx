@@ -14,7 +14,7 @@ import {
   EuiIcon,
   EuiText,
 } from '@elastic/eui';
-import theme from '@elastic/eui/dist/eui_theme_light.json';
+import theme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import styled from 'styled-components';
 import * as i18n from '../translations';
 

@@ -17,8 +17,8 @@ import {
 } from '@elastic/charts';
 import { i18n } from '@kbn/i18n';
 import { EuiFlexGroup, EuiFlexItem, EuiIcon, EuiSpacer } from '@elastic/eui';
-import lightEuiTheme from '@elastic/eui/dist/eui_theme_light.json';
-import darkEuiTheme from '@elastic/eui/dist/eui_theme_dark.json';
+import lightEuiTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import darkEuiTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 interface EndzonesProps {
   isDarkMode: boolean;

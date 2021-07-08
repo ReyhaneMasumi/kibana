@@ -10,7 +10,7 @@ import { render, waitFor, screen } from '@testing-library/react';
 
 import { IntlProvider } from 'react-intl';
 
-import euiThemeLight from '@elastic/eui/dist/eui_theme_light.json';
+import euiThemeLight from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 import { ScatterplotMatrix } from './scatterplot_matrix';
 

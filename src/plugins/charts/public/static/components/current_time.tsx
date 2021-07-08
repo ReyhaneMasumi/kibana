@@ -10,8 +10,8 @@ import moment, { Moment } from 'moment';
 import React, { FC } from 'react';
 
 import { LineAnnotation, AnnotationDomainType, LineAnnotationStyle } from '@elastic/charts';
-import lightEuiTheme from '@elastic/eui/dist/eui_theme_light.json';
-import darkEuiTheme from '@elastic/eui/dist/eui_theme_dark.json';
+import lightEuiTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import darkEuiTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 interface CurrentTimeProps {
   isDarkMode: boolean;

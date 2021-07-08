@@ -5,8 +5,8 @@
  * 2.0.
  */
 
-import darkTheme from '@elastic/eui/dist/eui_theme_dark.json';
-import lightTheme from '@elastic/eui/dist/eui_theme_light.json';
+import darkTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import lightTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 import { DEFAULT_DARK_MODE } from '../../../../common/constants';
 import { useUiSetting$ } from '../kibana';

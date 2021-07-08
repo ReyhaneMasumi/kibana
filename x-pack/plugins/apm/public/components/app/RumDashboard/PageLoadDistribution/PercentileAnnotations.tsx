@@ -13,7 +13,7 @@ import {
   LineAnnotationStyle,
   Position,
 } from '@elastic/charts';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { EuiToolTip } from '@elastic/eui';
 
 interface Props {

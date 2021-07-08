@@ -5,7 +5,7 @@
  * 2.0.
  */
 
-import lightTheme from '@elastic/eui/dist/eui_theme_light.json';
+import lightTheme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { render } from '@testing-library/react';
 import cytoscape from 'cytoscape';
 import React, { ReactNode } from 'react';

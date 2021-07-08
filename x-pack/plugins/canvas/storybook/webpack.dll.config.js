@@ -23,7 +23,7 @@ module.exports = {
   // which Storybook stories and their components would require, but don't
   // change during development.
   entry: [
-    '@elastic/eui/dist/eui_theme_light.css',
+    '@elastic/eui/dist/eui_theme_fanava_light.css',
     '@kbn/ui-framework/dist/kui_light.css',
     '@storybook/addon-actions/register',
     '@storybook/core',

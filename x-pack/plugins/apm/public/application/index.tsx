@@ -6,8 +6,8 @@
  */
 
 import { ApmRoute } from '@elastic/apm-rum-react';
-import euiDarkVars from '@elastic/eui/dist/eui_theme_dark.json';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiDarkVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Router, Switch } from 'react-router-dom';

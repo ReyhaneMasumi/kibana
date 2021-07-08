@@ -9,7 +9,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { storiesOf, addDecorator } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 import { KibanaContextProvider } from '../../../../../../../../../../src/plugins/kibana_react/public';
 import {

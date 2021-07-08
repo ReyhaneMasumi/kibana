@@ -9,7 +9,7 @@ import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 import { EuiHighlight, EuiSelectableOption } from '@elastic/eui';
 import styled from 'styled-components';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 const StyledSpan = styled.span`
   color: ${euiLightVars.euiColorSecondaryText};

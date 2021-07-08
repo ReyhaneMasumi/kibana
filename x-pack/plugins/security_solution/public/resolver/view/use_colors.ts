@@ -5,8 +5,8 @@
  * 2.0.
  */
 
-import euiThemeAmsterdamDark from '@elastic/eui/dist/eui_theme_amsterdam_dark.json';
-import euiThemeAmsterdamLight from '@elastic/eui/dist/eui_theme_amsterdam_light.json';
+import euiThemeAmsterdamDark from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import euiThemeAmsterdamLight from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { useMemo } from 'react';
 import { useUiSetting } from '../../../../../../src/plugins/kibana_react/public';
 

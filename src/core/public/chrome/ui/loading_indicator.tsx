@@ -75,7 +75,7 @@ export class LoadingIndicator extends React.Component<LoadingIndicatorProps, { v
       />
     ) : (
       <EuiIcon
-        type="logoElastic"
+        type="document"
         size="l"
         data-test-subj={testSubj}
         className="chrHeaderLogo__cluster"

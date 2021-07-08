@@ -52,7 +52,7 @@ export function MetricWithSparkline({ id, formatter, value, timeseries, color }:
             data={timeseries}
             xAccessor={'timestamp'}
             yAccessors={[id]}
-            color={colors[color] || '#006BB4'}
+            color={colors[color] || '#4d8c5e'}
           />
         </Chart>
       </EuiFlexItem>

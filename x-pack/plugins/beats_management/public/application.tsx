@@ -5,7 +5,7 @@
  * 2.0.
  */
 
-import * as euiVars from '@elastic/eui/dist/eui_theme_light.json';
+import * as euiVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import { i18n } from '@kbn/i18n';
 import { FormattedMessage } from '@kbn/i18n/react';
 import React from 'react';

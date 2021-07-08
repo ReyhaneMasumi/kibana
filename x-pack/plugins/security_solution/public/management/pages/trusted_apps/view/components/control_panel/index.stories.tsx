@@ -8,7 +8,7 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { storiesOf, addDecorator } from '@storybook/react';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 import { ControlPanel, ControlPanelProps } from '.';
 import { ViewType } from '../../../state';

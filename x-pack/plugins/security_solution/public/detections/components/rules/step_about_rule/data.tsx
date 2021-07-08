@@ -7,7 +7,7 @@
 
 import styled from 'styled-components';
 import { EuiHealth } from '@elastic/eui';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import React from 'react';
 
 import { Severity } from '../../../../../common/detection_engine/schemas/common/schemas';

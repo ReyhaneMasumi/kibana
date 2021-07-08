@@ -28,8 +28,8 @@ const StyledEuiFieldText = styled(EuiFieldText)`
       background-color: #fff;
       background-image: linear-gradient(
         to top,
-        #006bb4,
-        #006bb4 2px,
+        #4d8c5e,
+        #4d8c5e 2px,
         transparent 2px,
         transparent 100%
       );

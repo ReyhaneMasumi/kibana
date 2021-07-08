@@ -7,8 +7,8 @@
  */
 
 import React, { Fragment, useContext, useEffect } from 'react';
-import themeLight from '@elastic/eui/dist/eui_theme_light.json';
-import themeDark from '@elastic/eui/dist/eui_theme_dark.json';
+import themeLight from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import themeDark from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 import {
   EuiDataGridCellValueElementProps,

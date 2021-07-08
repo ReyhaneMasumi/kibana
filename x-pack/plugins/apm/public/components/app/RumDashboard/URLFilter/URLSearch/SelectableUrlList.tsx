@@ -32,8 +32,8 @@ import {
 import { FormattedMessage } from '@kbn/i18n/react';
 import { i18n } from '@kbn/i18n';
 import styled from 'styled-components';
-import euiLightVars from '@elastic/eui/dist/eui_theme_light.json';
-import euiDarkVars from '@elastic/eui/dist/eui_theme_dark.json';
+import euiLightVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
+import euiDarkVars from '@elastic/eui/dist/eui_theme_fanava_light.json';
 import useEvent from 'react-use/lib/useEvent';
 import {
   formatOptions,

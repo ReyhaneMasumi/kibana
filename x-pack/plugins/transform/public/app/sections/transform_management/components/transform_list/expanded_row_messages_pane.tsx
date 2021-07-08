@@ -10,7 +10,7 @@ import React, { useState } from 'react';
 import { EuiSpacer, EuiBasicTable } from '@elastic/eui';
 // @ts-ignore
 import { formatDate } from '@elastic/eui/lib/services/format';
-import theme from '@elastic/eui/dist/eui_theme_light.json';
+import theme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 
 import { i18n } from '@kbn/i18n';
 

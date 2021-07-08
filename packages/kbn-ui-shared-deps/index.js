@@ -48,8 +48,8 @@ exports.externals = {
   '@elastic/eui/lib/services': '__kbnSharedDeps__.ElasticEuiLibServices',
   '@elastic/eui/lib/services/format': '__kbnSharedDeps__.ElasticEuiLibServicesFormat',
   '@elastic/eui/dist/eui_charts_theme': '__kbnSharedDeps__.ElasticEuiChartsTheme',
-  '@elastic/eui/dist/eui_theme_light.json': '__kbnSharedDeps__.Theme.euiLightVars',
-  '@elastic/eui/dist/eui_theme_dark.json': '__kbnSharedDeps__.Theme.euiDarkVars',
+  '@elastic/eui/dist/eui_theme_fanava_light.json': '__kbnSharedDeps__.Theme.euiLightVars',
+  '@elastic/eui/dist/eui_theme_fanava_light.json': '__kbnSharedDeps__.Theme.euiDarkVars',
   lodash: '__kbnSharedDeps__.Lodash',
   'lodash/fp': '__kbnSharedDeps__.LodashFp',
 

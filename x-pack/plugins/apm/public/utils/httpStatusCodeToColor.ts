@@ -5,7 +5,7 @@
  * 2.0.
  */
 
-import theme from '@elastic/eui/dist/eui_theme_light.json';
+import theme from '@elastic/eui/dist/eui_theme_fanava_light.json';
 const { euiColorDarkShade, euiColorWarning } = theme;
 
 export const errorColor = '#c23c2b';
