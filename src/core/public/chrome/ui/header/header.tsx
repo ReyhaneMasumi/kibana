@@ -85,7 +85,7 @@ export function Header({
   ...observables
 }: HeaderProps) {
   const isVisible = useObservable(observables.isVisible$, false);
-  const isLocked = useObservable(observables.isLocked$, false);
+  const isLocked = useObservable(observables.isLocked$, true);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const breadcrumbsAppendExtension = useObservable(breadcrumbsAppendExtension$);
 
@@ -111,8 +111,9 @@ export function Header({
       <HeaderTopBanner headerBanner$={observables.headerBanner$} />
       <header className={className} data-test-subj="headerGlobalNav">
         <div id="globalHeaderBars" className="header__bars">
-          <EuiHeader
-            theme="dark"
+          {/* <EuiHeader
+            theme="default"
+            color="#577590"
             position="fixed"
             className="header__firstBar"
             sections={[
@@ -155,7 +156,7 @@ export function Header({
                 borders: 'none',
               },
             ]}
-          />
+          /> */}
 
           <EuiHeader position="fixed" className="header__secondBar">
             <EuiHeaderSection grow={false}>
