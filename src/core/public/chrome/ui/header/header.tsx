@@ -158,7 +158,7 @@ export function Header({
             ]}
           /> */}
 
-        <EuiHeader position="fixed" className="header__secondBar">
+        <EuiHeader style={{background: '#4d8c5e'}} position="fixed" className="header__firstBar">
           <EuiHeaderSection grow={false}>
             <EuiHeaderSectionItem border="right" className="header__toggleNavButtonSection">
               <EuiHeaderSectionItemButton
@@ -205,9 +205,10 @@ export function Header({
             </EuiHeaderSectionItem>
           </EuiHeaderSection>
         </EuiHeader>
-        {/* </div> */}
-
-        <CollapsibleNav
+        <EuiHeader
+        position="fixed"
+        className="header__secondBar">
+          <CollapsibleNav
           appId$={application.currentAppId$}
           id={navId}
           isLocked={isLocked}
@@ -227,6 +228,10 @@ export function Header({
           }}
           customNavLink$={observables.customNavLink$}
         />
+        </EuiHeader>
+        {/* </div> */}
+
+        
       </header>
     </>
   );

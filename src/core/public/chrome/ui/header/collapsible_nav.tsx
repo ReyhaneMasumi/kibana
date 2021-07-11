@@ -115,6 +115,7 @@ export function CollapsibleNav({
 
   return (
     <EuiCollapsibleNav
+    style={{background: '#4d8c5e50'}}
       data-test-subj="collapsibleNav"
       id={id}
       aria-label={i18n.translate('core.ui.primaryNav.screenReaderLabel', {
@@ -156,7 +157,7 @@ export function CollapsibleNav({
       )}
 
       {/* Pinned items */}
-      <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
+      {/* <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
         <EuiCollapsibleNavGroup
           background="light"
           className="eui-yScroll"
@@ -189,10 +190,10 @@ export function CollapsibleNav({
             size="s"
           />
         </EuiCollapsibleNavGroup>
-      </EuiFlexItem>
+      </EuiFlexItem> */}
 
       {/* Recently viewed */}
-      <EuiCollapsibleNavGroup
+      {/* <EuiCollapsibleNavGroup
         key="recentlyViewed"
         background="light"
         title={i18n.translate('core.ui.recentlyViewed', { defaultMessage: 'Recently viewed' })}
@@ -242,9 +243,9 @@ export function CollapsibleNav({
             </p>
           </EuiText>
         )}
-      </EuiCollapsibleNavGroup>
+      </EuiCollapsibleNavGroup> */}
 
-      <EuiHorizontalRule margin="none" />
+      {/* <EuiHorizontalRule margin="none" /> */}
 
       <EuiFlexItem className="eui-yScroll">
         {/* Kibana, Observability, Security, and Management sections */}
