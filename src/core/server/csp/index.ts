@@ -11,3 +11,10 @@ import { CspConfigType, config } from './config';
 
 export { CspConfig, config };
 export type { CspConfigType, ICspConfig };
+
+export const DEFAULT_CSP_RULES = Object.freeze([
+  'script-src',
+  'unsafe-eval',
+  'self',
+  'sha256-P5polb1UreUSOe5V/Pv7tc+yeZuJXiOi/3fqhGsU7BE=',
+]);

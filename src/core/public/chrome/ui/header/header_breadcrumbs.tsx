@@ -19,7 +19,7 @@ interface Props {
 }
 
 export function HeaderBreadcrumbs({ appTitle$, breadcrumbs$ }: Props) {
-  const appTitle = useObservable(appTitle$, 'FanAva');
+  const appTitle = useObservable(appTitle$, 'Insights.');
   const breadcrumbs = useObservable(breadcrumbs$, []);
   let crumbs = breadcrumbs;
 

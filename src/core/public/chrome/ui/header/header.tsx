@@ -110,8 +110,8 @@ export function Header({
     <>
       <HeaderTopBanner headerBanner$={observables.headerBanner$} />
       <header className={className} data-test-subj="headerGlobalNav">
-        <div id="globalHeaderBars" className="header__bars">
-          {/* <EuiHeader
+        {/* <div id="globalHeaderBars" className="header__bars"> */}
+        {/* <EuiHeader
             theme="default"
             color="#577590"
             position="fixed"
@@ -158,54 +158,54 @@ export function Header({
             ]}
           /> */}
 
-          <EuiHeader position="fixed" className="header__secondBar">
-            <EuiHeaderSection grow={false}>
-              <EuiHeaderSectionItem border="right" className="header__toggleNavButtonSection">
-                <EuiHeaderSectionItemButton
-                  data-test-subj="toggleNavButton"
-                  aria-label={i18n.translate('core.ui.primaryNav.toggleNavAriaLabel', {
-                    defaultMessage: 'Toggle primary navigation',
-                  })}
-                  onClick={() => setIsNavOpen(!isNavOpen)}
-                  aria-expanded={isNavOpen}
-                  aria-pressed={isNavOpen}
-                  aria-controls={navId}
-                  ref={toggleCollapsibleNavRef}
-                >
-                  <EuiIcon type="menu" size="m" />
-                </EuiHeaderSectionItemButton>
-              </EuiHeaderSectionItem>
-
-              <HeaderNavControls side="left" navControls$={observables.navControlsLeft$} />
-            </EuiHeaderSection>
-
-            {!breadcrumbsAppendExtension ? (
-              Breadcrumbs
-            ) : (
-              <EuiFlexGroup
-                responsive={false}
-                wrap={false}
-                alignItems={'center'}
-                className={'header__breadcrumbsWithExtensionContainer'}
-                gutterSize={'none'}
+        <EuiHeader position="fixed" className="header__secondBar">
+          <EuiHeaderSection grow={false}>
+            <EuiHeaderSectionItem border="right" className="header__toggleNavButtonSection">
+              <EuiHeaderSectionItemButton
+                data-test-subj="toggleNavButton"
+                aria-label={i18n.translate('core.ui.primaryNav.toggleNavAriaLabel', {
+                  defaultMessage: 'Toggle primary navigation',
+                })}
+                onClick={() => setIsNavOpen(!isNavOpen)}
+                aria-expanded={isNavOpen}
+                aria-pressed={isNavOpen}
+                aria-controls={navId}
+                ref={toggleCollapsibleNavRef}
               >
-                {Breadcrumbs}
-                <HeaderExtension
-                  extension={breadcrumbsAppendExtension.content}
-                  containerClassName={'header__breadcrumbsAppendExtension'}
-                />
-              </EuiFlexGroup>
-            )}
+                <EuiIcon type="menu" size="m" />
+              </EuiHeaderSectionItemButton>
+            </EuiHeaderSectionItem>
 
-            <HeaderBadge badge$={observables.badge$} />
+            <HeaderNavControls side="left" navControls$={observables.navControlsLeft$} />
+          </EuiHeaderSection>
 
-            <EuiHeaderSection side="right">
-              <EuiHeaderSectionItem border="none">
-                <HeaderActionMenu actionMenu$={application.currentActionMenu$} />
-              </EuiHeaderSectionItem>
-            </EuiHeaderSection>
-          </EuiHeader>
-        </div>
+          {!breadcrumbsAppendExtension ? (
+            Breadcrumbs
+          ) : (
+            <EuiFlexGroup
+              responsive={false}
+              wrap={false}
+              alignItems={'center'}
+              className={'header__breadcrumbsWithExtensionContainer'}
+              gutterSize={'none'}
+            >
+              {Breadcrumbs}
+              <HeaderExtension
+                extension={breadcrumbsAppendExtension.content}
+                containerClassName={'header__breadcrumbsAppendExtension'}
+              />
+            </EuiFlexGroup>
+          )}
+
+          <HeaderBadge badge$={observables.badge$} />
+
+          <EuiHeaderSection side="right">
+            <EuiHeaderSectionItem border="none">
+              <HeaderActionMenu actionMenu$={application.currentActionMenu$} />
+            </EuiHeaderSectionItem>
+          </EuiHeaderSection>
+        </EuiHeader>
+        {/* </div> */}
 
         <CollapsibleNav
           appId$={application.currentAppId$}

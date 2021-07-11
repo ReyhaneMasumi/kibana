@@ -68,7 +68,7 @@ export const Template: FunctionComponent<Props> = ({
                   'Elastic did not load properly. Check the server output for more information.',
               })}
             >
-              {i18n('core.ui.welcomeMessage', { defaultMessage: 'Loading FanAva' })}
+              {i18n('core.ui.welcomeMessage', { defaultMessage: 'Loading Insights.' })}
             </div>
             <div className="kbnProgress" />
           </div>
