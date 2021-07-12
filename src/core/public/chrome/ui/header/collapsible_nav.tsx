@@ -247,7 +247,7 @@ export function CollapsibleNav({
 
       {/* <EuiHorizontalRule margin="none" /> */}
 
-      <EuiFlexItem className="eui-yScroll">
+      <EuiFlexItem className="eui-euiFlexGroup eui-yScroll eui-xScroll">
         {/* Kibana, Observability, Security, and Management sections */}
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
