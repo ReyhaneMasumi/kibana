@@ -28,7 +28,6 @@ import { InternalApplicationStart } from '../../../application/types';
 import { HttpStart } from '../../../http';
 import { OnIsLockedUpdate } from './';
 import { createEuiListItem, createRecentNavLink, isModifiedOrPrevented } from './nav_link';
-import { EuiFlexGroup } from '@elastic/eui/src/components/flex/flex_group';
 
 function getAllCategories(allCategorizedLinks: Record<string, ChromeNavLink[]>) {
   const allCategories = {} as Record<string, AppCategory | undefined>;
@@ -116,7 +115,7 @@ export function CollapsibleNav({
 
   return (
     <EuiCollapsibleNav
-      style={{ background: '#4d8c5e50', width: '100%' }}
+      style={{ background: '#4d8c5e50', width: '100% !important' }}
       data-test-subj="collapsibleNav"
       id={id}
       aria-label={i18n.translate('core.ui.primaryNav.screenReaderLabel', {
@@ -128,11 +127,11 @@ export function CollapsibleNav({
     >
       {customNavLink && (
         <Fragment>
-          <EuiFlexGroup style={{ flexShrink: 0 }}>
+          <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
             <EuiCollapsibleNavGroup
               background="light"
-              className="eui-yScroll"
-              style={{ maxHeight: '40vh', flexDirection: 'row', overflowX: 'auto' }}
+              className="eui-euiFlexGroup eui-yScroll eui-xScroll"
+              style={{ maxHeight: '40vh' }}
             >
               <EuiListGroup
                 listItems={[
@@ -151,7 +150,7 @@ export function CollapsibleNav({
                 size="s"
               />
             </EuiCollapsibleNavGroup>
-          </EuiFlexGroup>
+          </EuiFlexItem>
 
           <EuiHorizontalRule margin="none" />
         </Fragment>
@@ -248,7 +247,7 @@ export function CollapsibleNav({
 
       {/* <EuiHorizontalRule margin="none" /> */}
 
-      <EuiFlexGroup className="eui-yScroll" style={{ flexDirection: 'row', overflowX: 'auto' }}>
+      <EuiFlexItem className="eui-yScroll">
         {/* Kibana, Observability, Security, and Management sections */}
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
@@ -325,7 +324,7 @@ export function CollapsibleNav({
             </EuiListGroup>
           </EuiCollapsibleNavGroup>
         </EuiShowFor>
-      </EuiFlexGroup>
+      </EuiFlexItem>
     </EuiCollapsibleNav>
   );
 }
