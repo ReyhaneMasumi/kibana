@@ -248,7 +248,7 @@ export function CollapsibleNav({
 
       {/* <EuiHorizontalRule margin="none" /> */}
 
-      <EuiFlexItem className="eui-yScroll">
+      <EuiFlexGroup className="eui-yScroll" style={{ flexDirection: 'row', overflowX: 'auto' }}>
         {/* Kibana, Observability, Security, and Management sections */}
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
@@ -325,7 +325,7 @@ export function CollapsibleNav({
             </EuiListGroup>
           </EuiCollapsibleNavGroup>
         </EuiShowFor>
-      </EuiFlexItem>
+      </EuiFlexGroup>
     </EuiCollapsibleNav>
   );
 }
