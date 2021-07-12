@@ -115,7 +115,7 @@ export function CollapsibleNav({
 
   return (
     <EuiCollapsibleNav
-    style={{background: '#4d8c5e50'}}
+      style={{ background: '#4d8c5e50' }}
       data-test-subj="collapsibleNav"
       id={id}
       aria-label={i18n.translate('core.ui.primaryNav.screenReaderLabel', {
@@ -127,11 +127,11 @@ export function CollapsibleNav({
     >
       {customNavLink && (
         <Fragment>
-          <EuiFlexItem grow={false} style={{ flexShrink: 0, flexDirection: 'row' }}>
+          <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
             <EuiCollapsibleNavGroup
               background="light"
               className="eui-yScroll"
-              style={{ maxHeight: '40vh' }}
+              style={{ maxHeight: '40vh', flexDirection: 'row', overflowX: 'auto' }}
             >
               <EuiListGroup
                 listItems={[

@@ -51,8 +51,8 @@
 
   .euiFlyout,
   .euiCollapsibleNav {
-    top: $headerHeight;
-    height: calc(100% - #{$headerHeight});
+    top: 50px;
+    height: calc(30% - 50px);
   }
 }
 
