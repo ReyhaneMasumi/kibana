@@ -126,7 +126,7 @@ export function CollapsibleNav({
       isDocked={isLocked}
       onClose={closeNav}
     >
-      <EuiFlexGroup>
+      <div className="euiFlexGroup">
         {customNavLink && (
           <Fragment>
             <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
@@ -328,7 +328,7 @@ export function CollapsibleNav({
             </EuiCollapsibleNavGroup>
           </EuiShowFor>
         </EuiFlexItem>
-      </EuiFlexGroup>
+      </div>
     </EuiCollapsibleNav>
   );
 }
