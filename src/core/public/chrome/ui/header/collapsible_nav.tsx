@@ -28,6 +28,7 @@ import { InternalApplicationStart } from '../../../application/types';
 import { HttpStart } from '../../../http';
 import { OnIsLockedUpdate } from './';
 import { createEuiListItem, createRecentNavLink, isModifiedOrPrevented } from './nav_link';
+import { EuiFlexGroup } from '@elastic/eui/src/components/flex/flex_group';
 
 function getAllCategories(allCategorizedLinks: Record<string, ChromeNavLink[]>) {
   const allCategories = {} as Record<string, AppCategory | undefined>;
@@ -115,7 +116,7 @@ export function CollapsibleNav({
 
   return (
     <EuiCollapsibleNav
-      style={{ background: '#4d8c5e50' }}
+      style={{ background: '#4d8c5e50', width: '100%' }}
       data-test-subj="collapsibleNav"
       id={id}
       aria-label={i18n.translate('core.ui.primaryNav.screenReaderLabel', {
@@ -127,7 +128,7 @@ export function CollapsibleNav({
     >
       {customNavLink && (
         <Fragment>
-          <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
+          <EuiFlexGroup style={{ flexShrink: 0 }}>
             <EuiCollapsibleNavGroup
               background="light"
               className="eui-yScroll"
@@ -150,7 +151,7 @@ export function CollapsibleNav({
                 size="s"
               />
             </EuiCollapsibleNavGroup>
-          </EuiFlexItem>
+          </EuiFlexGroup>
 
           <EuiHorizontalRule margin="none" />
         </Fragment>
