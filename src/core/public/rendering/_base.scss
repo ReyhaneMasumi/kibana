@@ -26,8 +26,9 @@
   flex-flow: column nowrap;
   margin: 0 auto;
   left: 0;
-    right: 0;
-    position: absolute;
+  right: 0;
+  top: 20%;
+  position: absolute;
 
   @include kibanaFullBodyMinHeight();
 }
@@ -55,7 +56,7 @@
   .euiFlyout,
   .euiCollapsibleNav {
     top: 50px;
-    height: calc(30% - 50px);
+    height: calc(20% - 50px);
   }
 }
 
