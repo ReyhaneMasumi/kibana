@@ -28,6 +28,7 @@ import { InternalApplicationStart } from '../../../application/types';
 import { HttpStart } from '../../../http';
 import { OnIsLockedUpdate } from './';
 import { createEuiListItem, createRecentNavLink, isModifiedOrPrevented } from './nav_link';
+import { EuiFlexGroup } from '@elastic/eui/src/components/flex/flex_group';
 
 function getAllCategories(allCategorizedLinks: Record<string, ChromeNavLink[]>) {
   const allCategories = {} as Record<string, AppCategory | undefined>;
@@ -247,7 +248,7 @@ export function CollapsibleNav({
 
       {/* <EuiHorizontalRule margin="none" /> */}
 
-      <EuiFlexItem className="eui-euiFlexGroup eui-yScroll eui-xScroll">
+      <EuiFlexGroup className="euiFlexGroup eui-yScroll eui-xScroll">
         {/* Kibana, Observability, Security, and Management sections */}
         {orderedCategories.map((categoryName) => {
           const category = categoryDictionary[categoryName]!;
@@ -324,7 +325,7 @@ export function CollapsibleNav({
             </EuiListGroup>
           </EuiCollapsibleNavGroup>
         </EuiShowFor>
-      </EuiFlexItem>
+      </EuiFlexGroup>
     </EuiCollapsibleNav>
   );
 }
