@@ -42,7 +42,7 @@
 }
 
 // adapted from euiHeaderAffordForFixed as we need to handle the top banner
-@mixin kbnAffordForHeader($headerHeight) {
+@mixin kbnAffordForHeader($headerHeight: 50px) {
   padding-top: $headerHeight;
 
   #app-fixed-viewport {

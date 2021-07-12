@@ -127,7 +127,7 @@ export function CollapsibleNav({
     >
       {customNavLink && (
         <Fragment>
-          <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
+          <EuiFlexItem grow={false} style={{ flexShrink: 0, flexDirection: 'row' }}>
             <EuiCollapsibleNavGroup
               background="light"
               className="eui-yScroll"

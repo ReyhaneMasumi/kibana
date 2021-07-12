@@ -110,7 +110,7 @@ export function Header({
     <>
       <HeaderTopBanner headerBanner$={observables.headerBanner$} />
       <header className={className} data-test-subj="headerGlobalNav">
-        {/* <div id="globalHeaderBars" className="header__bars"> */}
+        <div id="globalHeaderBars" className="header__bars">
         {/* <EuiHeader
             theme="default"
             color="#577590"
@@ -229,7 +229,7 @@ export function Header({
           customNavLink$={observables.customNavLink$}
         />
         </EuiHeader>
-        {/* </div> */}
+        </div>
 
         
       </header>
