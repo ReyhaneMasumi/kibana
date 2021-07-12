@@ -116,7 +116,7 @@ export function CollapsibleNav({
 
   return (
     <EuiCollapsibleNav
-      style={{ background: '#4d8c5e50', width: '100% !important' }}
+      style={{ background: 'rgb(197 220 203)', width: '100% !important' }}
       data-test-subj="collapsibleNav"
       id={id}
       aria-label={i18n.translate('core.ui.primaryNav.screenReaderLabel', {
