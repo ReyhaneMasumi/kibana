@@ -126,40 +126,39 @@ export function CollapsibleNav({
       isDocked={isLocked}
       onClose={closeNav}
     >
-      <div className="euiFlexGroup">
-        {customNavLink && (
-          <Fragment>
-            <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
-              <EuiCollapsibleNavGroup
-                background="light"
-                className=" eui-yScroll eui-xScroll"
-                style={{ maxHeight: '40vh' }}
-              >
-                <EuiListGroup
-                  listItems={[
-                    createEuiListItem({
-                      link: customNavLink,
-                      basePath,
-                      navigateToApp,
-                      dataTestSubj: 'collapsibleNavCustomNavLink',
-                      onClick: closeNav,
-                      externalLink: true,
-                    }),
-                  ]}
-                  maxWidth="none"
-                  color="text"
-                  gutterSize="none"
-                  size="s"
-                />
-              </EuiCollapsibleNavGroup>
-            </EuiFlexItem>
+      {customNavLink && (
+        <Fragment>
+          <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
+            <EuiCollapsibleNavGroup
+              background="light"
+              className=" eui-yScroll eui-xScroll"
+              style={{ maxHeight: '40vh' }}
+            >
+              <EuiListGroup
+                listItems={[
+                  createEuiListItem({
+                    link: customNavLink,
+                    basePath,
+                    navigateToApp,
+                    dataTestSubj: 'collapsibleNavCustomNavLink',
+                    onClick: closeNav,
+                    externalLink: true,
+                  }),
+                ]}
+                maxWidth="none"
+                color="text"
+                gutterSize="none"
+                size="s"
+              />
+            </EuiCollapsibleNavGroup>
+          </EuiFlexItem>
 
-            <EuiHorizontalRule margin="none" />
-          </Fragment>
-        )}
+          <EuiHorizontalRule margin="none" />
+        </Fragment>
+      )}
 
-        {/* Pinned items */}
-        {/* <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
+      {/* Pinned items */}
+      {/* <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
         <EuiCollapsibleNavGroup
           background="light"
           className="eui-yScroll"
@@ -194,8 +193,8 @@ export function CollapsibleNav({
         </EuiCollapsibleNavGroup>
       </EuiFlexItem> */}
 
-        {/* Recently viewed */}
-        {/* <EuiCollapsibleNavGroup
+      {/* Recently viewed */}
+      {/* <EuiCollapsibleNavGroup
         key="recentlyViewed"
         background="light"
         title={i18n.translate('core.ui.recentlyViewed', { defaultMessage: 'Recently viewed' })}
@@ -247,7 +246,8 @@ export function CollapsibleNav({
         )}
       </EuiCollapsibleNavGroup> */}
 
-        {/* <EuiHorizontalRule margin="none" /> */}
+      {/* <EuiHorizontalRule margin="none" /> */}
+      <EuiFlexGroup>
         <EuiFlexItem className="eui-yScroll eui-xScroll">
           {/* Kibana, Observability, Security, and Management sections */}
           {orderedCategories.map((categoryName) => {
@@ -328,7 +328,7 @@ export function CollapsibleNav({
             </EuiCollapsibleNavGroup>
           </EuiShowFor>
         </EuiFlexItem>
-      </div>
+      </EuiFlexGroup>
     </EuiCollapsibleNav>
   );
 }
